@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Address2{
+    int32 house_id = 1;
+    bytes house_addr = 2;
+}
+
+message Person2{
+    int32 id = 1;
+    repeated bytes name = 2;
+    bytes sex = 3;
+    int32 age = 4;
+    Address2 addr = 5;
+}
